@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn About PyFast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset some default browser styles */
+        body, h1, p, a, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        .article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px);
+            padding: 20px;
+        }
+        
+        .article-content {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .article h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .article p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .python-indicator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .python-indicator i {
+            font-size: 2em;
+            color: #306998;
+            margin-right: 10px;
+        }
+        
+        .python-indicator p {
+            font-size: 1.2em;
+            color: #306998;
+            margin: 0;
+        }
+        
+        .sha256 {
+            margin: 20px 0;
+        }
+        
+        .sha256 label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .sha256 input {
+            width: calc(100% - 100px);
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-right: 10px;
+        }
+        
+        .copy-btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background: #3498db;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        
+        .copy-btn:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            color: #fff;
+            background: #3498db;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: #fff;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .footer-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: #3498db;
+        }
+
+        .footer-link i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="article">
+        <div class="article-content">
+            <h1>What is PyFast?</h1>
+            <p>PyFast is an open source application developed solely in Python. It turns off some annoying services in Windows that slow down the system and reduce its speed. It also reduces RAM consumption significantly, especially on medium devices, working in Windows 10 & Windows 11.</p>
+            
+            <div class="python-indicator">
+                <i class="fab fa-python"></i>
+                <p>Built with Python</p>
+            </div>
+            
+            <div class="sha256">
+                <label for="sha256">SHA-256 Hash:</label>
+                <input type="text" id="sha256" value="B4D4249ACC45419D5122DDBCD596E0823154C7392669F74A07B1AA31C442C467" readonly>
+                <button class="copy-btn" data-clipboard-target="#sha256">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+            </div>
+            
+            <a href="/" class="back-button"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://www.instagram.com/zl1_310" target="_blank" class="footer-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/mo-310" target="_blank" class="footer-link"><i class="fab fa-github"></i></a>
+            <a href="/about-me" class="footer-link"><i class="fas fa-user"></i></a>
+        </div>
+    </footer>
+
+    <script src="../learn.js">
+        
+    </script>
+</body>
+</html>

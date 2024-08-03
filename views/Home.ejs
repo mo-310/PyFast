@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyFast</title>
+     
+    <!-- إضافة مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset some default browser styles */
+        body, h1, p, a, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero {
+            background: radial-gradient(circle, rgba(255,255,255,0.9), rgba(255,255,255,0.1));
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .hero-title {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out, colorChange 4s linear infinite;
+            background: linear-gradient(90deg, #3498db, #8e44ad, #3498db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        .cta-button, .learn-more-button {
+            display: inline-block;
+            padding: 15px 35px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            margin: 10px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button {
+            background: linear-gradient(90deg, #3498db, #8e44ad);
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(90deg, #2980b9, #6c3483);
+            transform: scale(1.05);
+        }
+
+        .learn-more-button {
+            background: #2ecc71;
+        }
+
+        .learn-more-button:hover {
+            background: #27ae60;
+            transform: scale(1.05);
+        }
+
+        .article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px);
+            padding: 20px;
+        }
+
+        .article-content {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .article h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .article p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            color: #fff;
+            background: #3498db;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: #fff;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #3498db;
+        }
+
+        .about-me-icon {
+            font-size: 1.5em;
+            color: #fff;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .about-me-icon:hover {
+            color: #3498db;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes colorChange {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">PyFast</h1>
+            <p class="hero-description">Make Windows faster by PyFast with just one click</p>
+            <a href="./Download" class="cta-button">Download</a>
+            <a href="/learnmore" class="learn-more-button">Learn More</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://www.instagram.com/zl1_310" target="_blank" class="footer-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/mo-310" target="_blank" class="footer-link"><i class="fab fa-github"></i></a>
+            <a href="/about-me" class="footer-link about-me-icon" title="About Me"><i class="fas fa-user"></i></a>
+        </div>
+    </footer>
+   
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page </title>
+     
+    <!-- إضافة مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* styles.css */
+
+        /* Reset some default browser styles */
+        body, h1, p, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .error-container {
+            text-align: center;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .error-container h1 {
+            font-size: 5em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .error-container p {
+            font-size: 1.5em;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        .error-button {
+            display: inline-block;
+            padding: 15px 35px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            background: #3498db;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .error-button:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: #fff;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #3498db;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>404</h1>
+        <p>Page Not Found</p>
+        <a href="/" class="error-button">Return To Home Page </a>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://www.instagram.com/zl1_310" target="_blank" class="footer-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/mo-310" target="_blank" class="footer-link"><i class="fab fa-github"></i></a>
+            
+            <a href="/about-me" class="footer-link"><i class="fas fa-user"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
